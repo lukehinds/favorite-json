@@ -11,6 +11,7 @@ func main() {
 
     http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
         fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))
+        // comment
     })
 
     http.HandleFunc("/hi", func(w http.ResponseWriter, r *http.Request){
